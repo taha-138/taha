@@ -1,0 +1,121 @@
+
+.header{
+    background-color: #97a07a;
+}
+.body{
+    background-color: #f0decc;
+    
+}
+.h1{
+    color: aqua;
+}
+.image{
+    width: 100%;
+    height: 600px;
+    background-size: contain;
+background-image: url(/PFS-FT03-KV-S23-Series-v2_PC.jpg) ;
+position:static ;
+border: 5px solid#F5E8B7;
+border-radius: 20px;
+    
+}
+.matn{
+    text-align: center;
+    background-color: #97a07a;
+    position: absolute;
+    left: 30px;
+    top: 370px;
+    bottom: 150px;
+   border: 3px solid #FEFAE0;
+    text-align: center;
+   border-radius: 10px;
+   width: 300px;
+}
+.button{
+    position:sticky;
+    top:0%;
+    text-align: center;
+}
+.navbar{
+    background-color: #748E63;
+    border: 5px solid #F5E8B7;
+    border-radius: 10px;
+}
+.nav-link{
+    color: aliceblue;
+}
+.nav-link active{
+    color: aliceblue;
+}
+.navbar-brand{
+     color: aliceblue;
+}
+.nav-link active{
+    color: aliceblue;
+}
+.card{
+    text-align: center;
+width: 18.5rem;;
+border: 4px solid #909b6d;
+border-radius:10px ;
+background-color: #F5E8B7;
+position:relative;
+top: 40px;
+Right:40px
+
+
+}
+.s23fe{
+    position: absolute;
+        top: -4px;
+        right: 550px;
+        width: 18.5rem;
+        border: 5px solid #A9B388;
+        border-radius: 10px;
+        background-color: #F5E8B7;
+        text-align: cente}
+       .tara{
+            position: absolute;
+            top: -4px;
+            width: 18.5rem;
+            right: 545px;
+            border: 5px solid #A9B388;
+            border-radius: 10px;
+            background-color: #F5E8B7;
+            text-align: center;
+
+        }
+        .h1{
+            text-align: center;
+            color: #F5E8B7;
+
+        }
+  .zifts{
+    background-image: url(../drift-14-drifting-around-acegif.gif);
+    bottom: 40px;
+  }
+  .navbar bg-body-tertiary{
+    text-align: center;
+  }
+  .rt{
+    background-color: #748E63;
+  }
+.sound{
+        text-align: center;
+            width: 18.5rem;
+            ;
+            position: absolute;
+            border: 4px solid#DE8F5F;
+            border-radius: 10px;
+            background-color: #B5CB99;
+            position: relative;
+            top: 40px;
+            Right: 1100px;
+            left: 100px;
+
+            
+                    top: -400px
+                    ;
+}
+
+        

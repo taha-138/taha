@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h2{
+            background-color: skyblue;
+            border:  5px dotted grey;
+            text-align: center;
+        }
+input{
+    background-color: rgb(171, 255, 143);
+    text-align: center;
+
+}
+
+    </style>
+
+<head>
+    <title>دانش آموزان و نمرات</title>
+</head>
+
+<body>
+
+    <h2>لطفا نام و نمره 10 دانش آموز را وارد کنید:</h2>
+    <form id="gradesForm">
+    
+<input type="text" id="studentName" placeholder="نام دانش آموز"><br><br>
+<input type="number" id="studentGrade" placeholder="نمره دانش آموز"><br><br>
+<button onclick="addStudent()">افزودن</button>
+
+<input type="text" id="studentName" placeholder="نام دانش آموز"><br><br>
+<input type="number" id="studentGrade" placeholder="نمره دانش آموز"><br><br>
+<button onclick="addStudent()">افزودن</button>
+
+<input type="text" id="studentName" placeholder="نام دانش آموز"><br><br>
+<input type="number" id="studentGrade" placeholder="نمره دانش آموز"><br><br>
+<button onclick="addStudent()">افزودن</button>
+
+<input type="text" id="studentName" placeholder="نام دانش آموز"><br><br>
+<input type="number" id="studentGrade" placeholder="نمره دانش آموز"><br><br>
+<button onclick="addStudent()">افزودن</button>
+
+<input type="text" id="studentName" placeholder="نام دانش آموز"><br><br>
+<input type="number" id="studentGrade" placeholder="نمره دانش آموز"><br><br>
+<button onclick="addStudent()">افزودن</button>
+
+<input type="text" id="studentName" placeholder="نام دانش آموز"><br><br>
+<input type="number" id="studentGrade" placeholder="نمره دانش آموز"><br><br>
+<button onclick="addStudent()">افزودن</button>
+
+<input type="text" id="studentName" placeholder="نام دانش آموز"><br><br>
+<input type="number" id="studentGrade" placeholder="نمره دانش آموز"><br><br>
+<button onclick="addStudent()">افزودن</button>
+</form>
+
+    <p id="studentList"></p>
+
+    <script>
+        let students = [];
+
+        function addStudent() {
+            let name = document.getElementById("studentName").value;
+            let grade = document.getElementById("studentGrade").value;
+
+            students.push({ name: name, grade: grade });
+
+            document.getElementById("studentList").innerHTML = "";
+
+            for (let i = 0; i < students.length; i++) {
+                document.getElementById("studentList").innerHTML += students[i].name + " - " + students[i].grade + "<br>";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

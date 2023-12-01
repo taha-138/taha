@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>نمایش اسامی دانش‌آموزان</title>
+    <style>
+        body {
+            font-family: tahoma;
+            direction: rtl;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header;">
+    
+        <navc class="-subtle navbar navbar-expand-lg shadow">
+    
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ناو بری</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a style="color: aliceblue;" class="nav-link active" aria-current="page" href="#">خانه</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">سایت های ما</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                مدل ها
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ایفون های جدید</a></li>
+                                <li><a class="dropdown-item" href="#">تخفیف ها</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                        <h1 class="h1">mobile center</h1>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="سرچ" placeholder="Search" aria-label="Search"
+                            aria-placeholder="اینجا سرچ کنید ">
+    
+                        <button style="background-color: aliceblue;" class="btn btn-outline-success"
+                            type="submit">سرچ</button>
+                    </form>
+                </div>
+            </div>
+        </navc>
+    </header>
+    <h1>لیست دانش‌آموزان</h1>
+    <ul>
+        <li>آرمین</li>
+        <li>بهرام</li>
+        <li>جواد</li>
+        <li>حسین</li>
+        <li>داریوش</li>
+        <li>رضا</li>
+        <li>زهرا</li>
+        <li>سارا</li>
+        <li>شهرزاد</li>
+        <li>طاهره</li>
+        <li>علی</li>
+        <li>فاطمه</li>
+        <li>قاسم</li>
+        <li>کیمیا</li>
+        <li>محمد</li>
+        <li>نیما</li>
+        <li>هادی</li>
+        <li>یاسمین</li>
+    </ul>
+    <script>
+        var ul = document.querySelector('ul');
+        var liArr = Array.from(ul.children);
+        liArr.sort(function (a, b) {
+            if (a.textContent < b.textContent)
+                return -1;
+            if (a.textContent > b.textContent)
+                return 1;
+            return 0;
+        });
+        liArr.forEach(function (li) {
+            ul.appendChild(li);
+        });
+    </script>
+</body>
+
+</html>
